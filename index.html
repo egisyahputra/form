@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+</head>
+<body bgcolor="aqua"> <center>
+<table bgcolor="white">
+
+    <h2>Selamat Datang di Halaman Website ini..</h2>
+    <h3>Silahkan diisi Form berikut ini</h3>
+    <form action="#" method="post" enctype="multipart/form-data"></table></center>
+        <table bgcolor="#006666" width="80%">
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" name="nama" required></td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td>:</td>
+                <td><input type="number" name="NIM" required></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td><input type="text" name="alamat" required></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td>:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="gender" value="Laki-laki" required> Laki - Laki
+                    <input type="radio" name="gender" value="Perempuan"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td> Mata Kuliah</td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" name="bahasa[]" value="Pemrograman Web"> Pemrograman Web
+                    <input type="checkbox" name="bahasa[]" value="Jaringan komputer"> jaringan Komputer
+                    <input type="checkbox" name="bahasa[]" value="Basis Data"> Basis Data
+                </td>
+            </tr> <br>
+            <tr>
+                <td>Program studi</td>
+                <td>:</td>
+                <td>
+                    <select name="Program studi" required>
+                        <option value="">-- Pilih Prodi --</option>
+                        <option value="Manajemen Informatika">Manajemen Informatika</option>
+                        <option value="CE">CE</option>
+                        <option value="TRPL">TRPL</option>
+                        <option value="TRMG">TRMG</option>
+                    </select>
+                </td>
+            </tr> <br><br>
+            <tr>
+                <td>Tempat, Tanggal Lahir</td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="tempat_lahir" placeholder="Tempat Lahir" required>
+                    <br>
+                    input type="date" name="tanggal_lahir" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Upload Gambar</td>
+                <td>:</td>
+                <td>
+                    <input type="file" name="gambar" accept="image/*">
+                </td>
+            </tr>
+            <tr>
+                <td>Tulis Komentar</td>
+                <td>:</td>
+                <td>
+                    <textarea name="komentar" cols="20" rows="5" placeholder="Tulis komentar di sini..."></textarea>
+                </td>
+            </tr>
+        </table>
+            <input type="submit" value="Save"> 
+            <input type="reset" value="Reset">
+</body>
+</html>
